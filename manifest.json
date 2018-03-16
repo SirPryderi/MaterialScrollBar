@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Material Scroll Bar",
+  "description": "Thinner and better scroll bar for Google Chrome and Chromium",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "permissions": [
+   "activeTab"
+   ],
+
+  "content_scripts": [ 
+	{
+   		"css": [ "style.css" ],
+		"matches": [ "<all_urls>" ]
+	}
+   ]
+}
